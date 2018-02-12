@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1000,
+        "locationId": 1415908,
+        "guests": 2,
+        "checkIn":"06/27/2017",
+        "checkOut":"07/1/2017",
+        "price":1000
+    },
+    {
+        "id": 1001,
+        "locationId": 65010,
+        "guests": 4,
+        "checkIn":"06/27/2017",
+        "checkOut":"07/27/2017",
+        "price":500
+    },
+    {
+        "id": 1004,
+        "locationId": 11533218,
+        "guests": 3,
+        "checkIn":"06/27/2017",
+        "checkOut":"06/28/2017",
+        "price":330
+    },
+    {
+        "id": 1005,
+        "locationId": 3964658,
+        "guests": 1,
+        "checkIn":"06/27/2017",
+        "checkOut":"07/27/2017",
+        "price":3000
+    }
+]

@@ -1,0 +1,1298 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    background: #fff;
+    color: #484848;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+header img{
+    height: 61px;
+    width: 61px;
+    padding: 15px;
+    margin-left: 10px;
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header nav a{
+    display: block;
+    text-decoration: none; 
+    padding-bottom: 7px;
+    color: #484848;
+    font-size: 14px;
+    margin: 0 16px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+header .dropdown {
+    display: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+header #dropdown_menu{
+    display: none;
+}
+
+
+header nav a:hover{
+    border-bottom: 2px black solid;
+    padding-bottom: 5px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    flex-grow: 1;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.contant{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contant .title{
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.home.contant{
+    align-items: flex-start;
+}
+
+.home .jumbotron{
+    font-size: 48px;
+    width: 60%;
+    color: #484848;
+    font-weight: 300;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif; 
+    padding-top: 58px;
+    padding-bottom: 82px;
+}
+
+.home .jumbotron span{
+    font-weight: 700;
+    color: #FF5A5F
+}
+
+.search{
+    width: 100%;
+    display: flex;
+    border: 1px #DBDBDB solid;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.08);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.search_box{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    height: 100%;
+}
+
+.search_box .box_text:first-child{
+    border-right: 1px #DBDBDB solid;
+}
+
+.box_text{
+    display: flex;
+    flex-direction: column;
+    color: #767676;
+    padding: 0 16px;
+    flex-basis: 50%;
+}
+
+.box_text input{
+    width: 100%;
+    height: 23px;
+    min-width: 100px;
+    max-width: 200px;
+    border: 0;
+    padding: 0 3px;
+}
+
+.box_text input[type="number"]{
+    min-width: 35px;
+}
+
+.box_title{
+    font-size: 15px;
+    color: #484848;
+    margin-bottom: 14px;
+}
+
+.box_title i{
+    display: none;
+}
+
+.search_button{
+    background: #FF5A5F;
+    border-radius: 4px;
+    padding: 0 16px;
+    color: #fff;
+    font-size: 19px;
+    text-align: center;
+    border: 0px;
+    height: 50px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.search_button:active{
+    background: #ef4c51;
+}
+
+.booked{
+    margin-top: 55px;
+}
+
+.booked_title{
+    font-size: 28px;
+    font-weight: 700;
+    color: #484848;
+}
+
+.booked_items{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.booked_item{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 33.3%;
+    padding: 10px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.booked_item img{
+    height: 180px;
+    width: 100%;
+}
+
+.item_details{
+    display: flex;
+    color: #484848;
+    font-size: 15px;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+    padding: 5px 0;
+    flex-grow: 1;
+}
+
+.tooltip {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.tooltip .tooltip_wrapper {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+    bottom: 0;
+    left:0;
+}
+
+.tooltip .tooltip_text {
+    max-width: 100%;
+    font-size: 13px;
+    text-align: center;
+    color: #fff;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+.booked_item:hover .tooltip .tooltip_wrapper {
+    display: flex;
+}
+
+.item_price{
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.item_name{
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    width:150px;
+    flex-grow: 1;
+}
+
+.item_reviews{
+    display: flex;
+    font-size: 13px;
+    padding-top:5px;
+}
+
+.item_rate{
+  color: #008489; 
+  font-size: 13px; 
+}
+
+.item_rate i{
+    margin: 0 1px;
+}
+
+.item_reviews span{
+    color: #484848;
+    margin-left: 10px;
+}
+
+footer{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: 1px #DBDBDB solid;
+    margin-top: 30px;
+    padding: 20px;
+    color: rgb(118, 118, 118);
+}
+
+footer .copyright{
+    display: flex;
+    align-items: center;
+}
+
+footer .footer_logo{
+    display: block; 
+    fill: rgb(118, 118, 118); 
+    height: 1.5em; 
+    width: 1.5em;
+    margin-right: 10px;
+}
+
+footer nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer nav a{
+    color: inherit;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+footer nav a:hover{
+    text-decoration: underline;
+}
+
+.about{
+    padding: 15px;
+}
+
+.about p{
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.43;
+    color: #484848;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.location header{
+    height: 68vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50% ;
+}
+
+.location .details{
+    position: relative;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+    padding-right: 325px;
+    width: 100%;
+}
+
+.location .details nav{
+    display: flex;
+    align-items: center;
+    padding:16px 0;
+    border-bottom:1px #DBDBDB solid;
+}
+
+.location .details nav a{
+    display: block;
+    text-decoration: none; 
+    color: #008489;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right:16px;
+    cursor: pointer;
+}
+
+.location .details nav a:hover{
+    text-decoration: underline; 
+}
+
+.location .summary .location_title{
+    display: flex; 
+    flex-direction: column;
+    padding: 20px 0;
+    border-bottom:1px #DBDBDB solid;
+}
+
+.location .summary .location_title .name{
+    font-size: 27px;
+    color: #484848;
+    font-weight: bold;  
+    margin-bottom: 10px
+}
+
+.location .summary .location_title .address{
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: center;
+    color: #767676;
+    font-size: 17px;
+}
+
+.location .summary .location_title .address .position{
+    margin-right: 15px;
+    margin-bottom: 5px;
+}
+
+.location .summary .location_title .address .rating_wrap{
+    display: flex; 
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.location .summary .location_title .address .rating_wrap .item_rate{
+    margin-right: 5px;
+}
+
+.location .summary .features{
+    display: flex; 
+    padding: 20px 0;
+    border-bottom:1px #DBDBDB solid;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.location .summary .features .feature{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    color: #767676;
+}
+
+.location .summary .features .feature i{
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+
+.location .booking {
+    position: absolute;
+    top:-50px;
+    right: 0;
+    width: 315px;
+}
+
+.location .booking .booking_price{
+    background-color: rgba(60,63,64,0.9);
+    padding: 13px 20px;
+    color: #fff;
+    z-index: 1;
+    font-size: 15px;
+    height: 50px;
+}
+
+.location .booking .booking_price .price{
+    font-size: 22px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.location .booking .booking_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px;
+    width: 100%;
+    border:1px #DBDBDB solid;
+}
+
+.location .booking .booking_form .booking_check{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.location .booking .booking_form .guests{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: #484848;
+    margin-bottom: 20px;
+}
+
+.location .booking .booking_form .booking_check .check{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    color: #484848;
+    margin-bottom: 10px;
+    flex-grow: 1;
+}
+
+.location .booking .booking_form .booking_check .check span, .location .booking .booking_form .guests span{
+    font-size: 15px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.location .booking .booking_form input{
+    border: 1px solid #dbdbdb;
+    font-size: 15px;
+    padding: 10px;
+    width: 100%;
+    min-width: 110px;
+}
+
+
+.location .booking .booking_form .book_button{
+    font-weight: bold;
+    font-size: 15px;
+    color: #ffffff; 
+    width: 80%;
+    border-radius: 4px;
+    border: 1px solid;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #ff5a5f;
+    padding: 10px 27px;
+    text-align: center;
+}
+
+.location .booking .booking_form .book_button:active{
+    background-color: #e00007;
+}
+
+.error_massage{
+    display: none;
+    font-weight: normal;
+    color: #e00007;
+    font-size: 15px;
+    margin: 5px 0;
+}
+
+.error .error_massage, .error + .error_massage{
+    display: block;
+}
+
+.error input{
+    border: 1px #ff5a5f solid !important;
+}
+
+.location .booking .booking_form .other_error{
+    width: 90%;
+    text-align: center;
+}
+
+.location .booking .booking_form .booking_check .error_massage{
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.location .booking .booking_form .message{
+    font-weight: normal;
+    color: #767676;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.location .booking .wish_list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 20px;
+    width: 100%;
+    border:1px #DBDBDB solid;
+    margin-top: 20px;
+}
+
+.location .booking .wish_list .wish_list_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px #DBDBDB solid;
+    background-color: #fff;
+    outline: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.location .booking .wish_list .wish_list_button:active{
+   background-color: #62d1dc;
+}
+
+.location .booking .wish_list .wish_list_button.selected{
+   background-color: #63d8e4;
+}
+
+.location .booking .wish_list .wish_list_button i{
+    color: rgb(118, 118, 118);
+    font-size: 16px;
+    margin-right: 7px;
+}
+
+.location .booking .wish_list .wish_list_button.selected i{
+    color: #e00007;
+}
+
+.location .booking .wish_list .wish_list_button span{
+    color: #484848;
+    font-size: 15px;
+}
+
+.location .booking .wish_list .saved_count{
+    font-weight: 300;
+    color: #767676;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+.location .booking .wish_list .share_icons{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.location .booking .wish_list .share_icons a{
+    margin-right: 20px;
+    color: #484848;
+}
+
+.location .booking .wish_list .share_icons a:last-child{
+    margin-right: 0;
+}
+
+.location .summary .location_description{
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    color: #484848;
+    padding: 20px 10px;
+    border-bottom:1px #DBDBDB solid;
+}
+
+.location .summary .location_description .title{
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.location .summary .reviews{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    color: #484848;
+}
+
+.location .summary .reviews .title{
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.location .summary .reviews .review{
+    padding: 20px 25px;
+    border-bottom:1px #DBDBDB solid;
+    margin-bottom: 10px;
+}
+
+.location .summary .reviews .review .name{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.location .summary .reviews .review .description{
+    font-size: 17px;
+    padding: 10px 0;
+}
+
+.loading{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.location .location_map{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.location .location_map .title{
+    font-size: 27px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.map{
+    min-height: 400px;
+    width: 95%;
+}
+
+
+.contant .list{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: #484848;
+}
+
+.reservations.contant .list .item_list{
+    height: 150px;
+}
+
+.contant .list .item_list{
+    display: flex;
+    width: 100%;
+    margin: 10px 0;
+    height: 210px;
+    font-size: 16px;
+    border: 1px solid #DBDBDB;
+    overflow: hidden;
+}
+
+.contant .list .item_list.loading{
+    align-items: center;
+    justify-content: center;
+}
+
+.contant .list .item_list .location_img{
+    flex-basis: 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50% ;
+}
+
+.contant .list .item_list .location_details{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5px;
+    flex-basis: 70%;
+    max-width: 70%;
+    height: 100%;
+}
+
+.contant .list .item_list .location_details .details{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    flex-basis: 78%;
+    max-height: 100%;
+}
+
+.contant .list .item_list .location_details .details > *{
+    margin-bottom: 7px;
+}
+
+
+.contant .list .item_list .location_details .right_item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    border-left: 1px solid #DBDBDB;
+    flex-basis: 22%;
+}
+
+.contant .list .item_list .location_details .right_item .buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contant .list .item_list .location_details .right_item .buttons .button{
+    width: 110px;
+    font-size: 1.3em;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    border: 1px solid;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 7px 0;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.contant .list .item_list .location_details .right_item .buttons .details_btn {
+    background-color: #008489;
+    border-color: #04888e;
+}
+
+.contant .list .item_list .location_details .right_item .buttons .remove_btn {
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+
+.contant .list .item_list .location_details .right_item .buttons .button:focus {
+    outline:0;
+}
+
+.contant .list .item_list .location_details .right_item .buttons .details_btn:active {
+    background-color: #04777b;
+}
+
+.contant .list .item_list .location_details .right_item .buttons .remove_btn:active  {
+    background-color: #c14642;
+
+}
+
+.contant .list .item_list .location_details .right_item .price{
+    font-size: 2.0em;
+}
+
+.contant .list .item_list .location_details .location_name{
+    width: 100%;
+}
+
+.contant .list .item_list .location_details .location_name{
+    font-weight: bold;
+}
+
+.contant .list .item_list .location_details .location_features{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+}
+
+.contant .list .item_list .location_details .location_features  > span{
+    margin-right: 7px;
+    margin-bottom: 10px;
+}
+
+.contant .list .item_list .location_details .location_features .item_rate{
+    margin-bottom: 10px;
+}
+
+.contant .list .item_list .location_details .address{
+    display: flex; 
+    align-items: center;
+    flex-wrap: wrap;
+    color: #767676;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+.contant .list .item_list .location_details .address .position{
+    margin-right: 15px;
+}
+
+.contant .list .item_list .location_details .description{
+    font-size: 13px;
+    line-height:15px;
+    max-height: 90px;
+    overflow-y: auto;
+    margin: 0;
+}
+
+.contant .list .item_list .location_details .right_item .per_night {
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+
+.contant .list .item_list .location_details .right_item .price_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal{
+    position: fixed;
+    z-index: 100;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.active{
+    display: flex;
+}
+
+.modal .modal_dialog{
+    position: relative;
+    background-color: #ffffff;
+    max-width: 568px ;
+    width: 100% ;
+    padding: 32px;  
+    color: #484848;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif ;
+}
+
+.modal .modal_dialog .modal_header{ 
+    margin-bottom: 8px;
+    font-size: 25px;
+}
+
+.modal .modal_dialog .modal_header i{ 
+    cursor: pointer;
+}
+
+.modal .modal_dialog .modal_body{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal .modal_dialog .modal_body .title{ 
+    font-size: 25px;
+    margin-bottom: 16px;
+    width: 100%;
+    text-align:center;
+}
+
+.modal .modal_dialog .modal_body .form{ 
+    width: 100%;
+}
+
+.modal .modal_dialog .modal_body .form .form_group{ 
+    margin-bottom: 16px;
+}
+
+.modal .modal_dialog .modal_body .form .form_group .input_wrap{ 
+    margin-bottom: 0;
+}
+
+.modal .modal_dialog .modal_body .form .input_wrap{ 
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.modal .modal_dialog .modal_body .form .input_wrap i{ 
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: 11px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+}
+
+.modal .modal_dialog .modal_body .form .input_wrap input{ 
+    font-size: 19px;
+    line-height: 24px;
+    padding: 11px;
+    width: 100%;
+}
+
+.modal .modal_dialog .modal_body .form .massage_wrap{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.modal .modal_dialog .modal_body .form .button{ 
+    text-align: center ;
+    border: 2px solid transparent ;
+    border-radius: 4px ;
+    width: 100% ;
+    font-size: 19px;
+    line-height: 22px ;
+    padding: 12px 24px;
+    color: #ffffff;
+    font-weight: bold ;
+    background: #FF5A5F ;
+    cursor: pointer;
+}
+
+.modal .modal_dialog .modal_body .form .button:active{
+    background-color: #e00007;
+}
+
+.modal .modal_dialog .modal_body .footer{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 19px;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px #DBDBDB solid ;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.modal .modal_dialog .modal_body .footer .txt_btn{ 
+    color: #008489;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+.modal .modal_dialog .modal_body .footer .txt_btn:hover{ 
+    text-decoration-line: underline;
+}
+
+@media screen and (min-width: 768px)  and (max-width: 1024px){
+    .home .jumbotron{
+        width: 80%;
+    }
+
+    .booked_item{
+        flex-basis: 50%;
+    }
+
+    .location .details{
+        padding-right: 0;
+    }
+
+    .location .booking {
+        position: relative;
+        top:0;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        border-bottom:1px #DBDBDB solid;
+    }
+
+}
+
+@media screen and (min-width: 480px)  and (max-width: 768px) {
+
+    .booked_item{
+        flex-basis: 50%;
+    }
+
+    .contant{
+        width: 95%;
+    }
+
+    footer{
+        flex-direction: column;
+        width: 95%;
+    }
+
+    footer .copyright{
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+
+    footer .footer_logo{
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .home .jumbotron{
+        width: 100%;
+        font-size: 35px;
+    }
+
+    .location header{
+        height: 50vh;
+    }
+
+    .location .details{
+        padding-right: 0;
+    }
+
+    .location .booking {
+        position: relative;
+        top:0;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        border-bottom:1px #DBDBDB solid;
+    }
+
+    .contant .list .item_list {
+        font-size: 14px;
+    }
+    
+    .contant .list .item_list .location_img{
+        flex-basis:35%;
+    }
+
+   .contant .list .item_list .location_details{
+        flex-basis:65%;
+        max-width: 65%;
+    }
+
+    .contant .list .item_list .location_details .right_item .buttons .button{
+        width: 75px;
+        font-size: 1em;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    header .dropdown{
+        display: inline;
+    }
+
+    header #dropdown_menu:checked ~ nav {
+        display: flex;
+    }
+
+    header nav{
+        display: none;
+        flex-direction: column;
+        width: 100% ;
+        border-bottom: 1px #767676 solid;
+    }
+
+    header nav a{
+        display: block;
+        background-color: whitesmoke;
+        border-top: 1px #767676 solid;
+        padding: 5px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav a:hover{
+        background-color:gainsboro;
+        border-bottom: 0;
+    }
+
+    header {
+        justify-content:flex-start;
+        flex-wrap: wrap;
+           
+    }
+      
+    .booked_item{
+        flex-basis: 100%;
+    }
+
+    .contant{
+        width: 95%;
+    }
+
+    footer{
+        flex-direction: column;
+        width: 95%;
+        padding: 20px 10px;
+    }
+
+    footer .copyright{
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+
+    footer .footer_logo{
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    footer nav .links, footer nav .social_icons{
+       margin-bottom: 10px;
+    }
+
+    .home .jumbotron{
+        width: 100%;
+        font-size: 25px;
+    }
+
+    .search{
+        padding: 5px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search_box{
+        width: 100%;
+    }
+
+    .box_text{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        padding: 0 7px;
+    }
+
+    .box_text input{
+        width: 80%
+    }
+
+    .box_title{
+        font-size: 20px;
+        margin: 0 7px;
+    }
+
+    .box_title i{
+        display: inline;
+    }
+
+    .box_title span{
+        display: none;
+    }
+
+    .search_button{
+        padding: 0 5px;
+        color: #fff;
+        font-size: 15px;
+        text-align: center;
+        height: 25px;
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .location header{
+        height: 30vh;
+    }
+
+    .location .details{
+        padding-right: 0;
+    }
+
+    .location .booking {
+        position: relative;
+        top:0;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        border-bottom:1px #DBDBDB solid;
+    }
+
+    .location .summary .location_title .name {
+        font-size: 20px;
+    }
+
+    .location .summary .location_title .address {
+        font-size: 15px;
+    }
+
+    .contant .list .item_list{
+        flex-direction: column;
+        height: 390px;
+        font-size: 15px;
+    }
+
+    .reservations.contant .list .item_list{
+        height: 300px;
+    }
+
+    .contant .list .item_list .location_img{
+        flex-basis:45%;
+    }
+
+    .contant .list .item_list .location_details{
+        flex-direction: column;
+        flex-basis:55%;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .contant .list .item_list .location_details .details > *{
+        margin-bottom: 5px;
+    }
+
+    .contant .list .item_list .location_details .details{
+        flex-basis:78%;
+        max-height: 78%;
+    }
+
+    .contant .list .item_list .location_details .description{
+        font-size: 13px;
+        line-height:15px;
+        max-height: 75px;
+        overflow-y: auto;
+        margin: 0;
+    }
+
+    .contant .list .item_list .location_details .right_item{
+        flex-direction: row;
+        justify-content:space-between;
+        padding: 4px 10px;
+        flex-basis: 22%;
+    }
+
+    .contant .list .item_list .location_details .right_item .buttons{
+        flex-direction: row;
+    }
+
+    .contant .list .item_list .location_details .right_item .buttons .button{
+        font-size: 0.8em;
+        width: 80px;
+        padding: 5px 0;
+        margin-bottom: 0;
+        margin-left: 10px;
+    }
+
+    .contant .list .item_list .location_details .right_item .price_wrap {
+        flex-direction: row;
+    }
+
+    .contant .list .item_list .location_details .right_item .price_wrap .price{
+        font-size: 1.5em;
+        margin-right: 10px;
+    }
+
+    .contant .list .item_list .location_details .right_item .price_wrap .per_night {
+        font-size: 0.7em;
+        margin-top: 0;
+        margin-right: 10px;
+    }
+
+    .modal .modal_dialog{
+        min-height: 100%;
+        padding: 10px;
+    }
+}

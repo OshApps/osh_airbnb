@@ -1,0 +1,467 @@
+[
+    {
+        "name": "Atlanta",
+        "country": "GA, United States",
+        "id": 1045
+    },
+    {
+        "name": "Charleston",
+        "country": "SC, United States",
+        "id": 1046
+    },
+    {
+        "name": "Stanardsville",
+        "country": "VA, United States",
+        "id": 1047
+    },
+    {
+        "name": "Nashville",
+        "country": "TN, United States",
+        "id": 1048
+    },
+    {
+        "name": "Toronto",
+        "country": "ON, Canada",
+        "id": 1049
+    },
+    {
+        "name": "Washington",
+        "country": "DC, United States",
+        "id": 1050
+    },
+    {
+        "name": "Orondo",
+        "country": "WA, United States",
+        "id": 1051
+    },
+    {
+        "name": "Mayne Island",
+        "country": "BC, Canada",
+        "id": 1052
+    },
+    {
+        "name": "Sechelt",
+        "country": "BC, Canada",
+        "id": 1053
+    },
+    {
+        "name": "Vancouver",
+        "country": "BC, Canada",
+        "id": 1054
+    },
+    {
+        "name": "Portland",
+        "country": "OR, United States",
+        "id": 1055
+    },
+    {
+        "name": "Seattle",
+        "country": "WA, United States",
+        "id": 1056
+    },
+    {
+        "name": "Thompson",
+        "country": "MB, Canada",
+        "id": 1057
+    },
+    {
+        "name": "Flin Flon",
+        "country": "MB, Canada",
+        "id": 1058
+    },
+    {
+        "name": "Air Ronge",
+        "country": "SK, Canada",
+        "id": 1059
+    },
+    {
+        "name": "La Ronge",
+        "country": "SK, Canada",
+        "id": 1060
+    },
+    {
+        "name": "The Pas",
+        "country": "MB, Canada",
+        "id": 1061
+    },
+    {
+        "name": "Division No. 18",
+        "country": "SK, Canada",
+        "id": 1062
+    },
+    {
+        "name": "Candle Lake",
+        "country": "SK, Canada",
+        "id": 1063
+    },
+    {
+        "name": "Armenia",
+        "country": "Quindio, Colombia",
+        "id": 1064
+    },
+    {
+        "name": "Governador Celso Ramos",
+        "country": "Santa Catarina, Brazil",
+        "id": 1065
+    },
+    {
+        "name": "Valparaiso",
+        "country": "Valparaiso, Chile",
+        "id": 1066
+    },
+    {
+        "name": "São Paulo",
+        "country": "São Paulo, Brazil",
+        "id": 1067
+    },
+    {
+        "name": "Rio Acima",
+        "country": "Minas Gerais, Brazil",
+        "id": 1068
+    },
+    {
+        "name": "Vila Velha",
+        "country": "Espírito Santo, Brazil",
+        "id": 1069
+    },
+    {
+        "name": "Tiradentes",
+        "country": "Minas Gerais, Brazil",
+        "id": 1070
+    },
+    {
+        "name": "Poços de Caldas",
+        "country": "Minas Gerais, Brazil",
+        "id": 1071
+    },
+    {
+        "name": "Salvador",
+        "country": "Bahia, Brazil",
+        "id": 1072
+    },
+    {
+        "name": "Arraial D'Ajuda",
+        "country": "Bahia, Brazil",
+        "id": 1073
+    },
+    {
+        "name": "Cape Town",
+        "country": "Western Cape, South Africa",
+        "id": 1074
+    },
+    {
+        "name": "Tel Aviv-Yafo",
+        "country": "Tel Aviv District, Israel",
+        "id": 1075
+    },
+    {
+        "name": "Ramat Gan",
+        "country": "Tel Aviv District, Israel",
+        "id": 1076
+    },
+    {
+        "name": "Ramla",
+        "country": "Center District, Israel",
+        "id": 1077
+    },
+    {
+        "name": "Kiryat Ata",
+        "country": "Israel",
+        "id": 1078
+    },
+    {
+        "name": "אלוני אבא",
+        "country": "מחוז הצפון, Israel",
+        "id": 1079
+    },
+    {
+        "name": "Isfiya",
+        "country": "Haifa District, Israel",
+        "id": 1080
+    },
+    {
+        "name": "Haifa",
+        "country": "Haifa District, Israel",
+        "id": 1081
+    },
+    {
+        "name": "Kiryat Tiv'on",
+        "country": "Israel",
+        "id": 1082
+    },
+    {
+        "name": "Eilat",
+        "country": "South District, Israel",
+        "id": 1083
+    },
+    {
+        "name": "Ostuni",
+        "country": "Apúlia, Italy",
+        "id": 1084
+    },
+    {
+        "name": "Oia",
+        "country": "South Aegean, Greece",
+        "id": 1085
+    },
+    {
+        "name": "Canicattì",
+        "country": "Sicilia, Italy",
+        "id": 1086
+    },
+    {
+        "name": "Perast",
+        "country": "Perast, Montenegro",
+        "id": 1087
+    },
+    {
+        "name": "Berlin",
+        "country": "Berlin, Germany",
+        "id": 1088
+    },
+    {
+        "name": "Imerovigli",
+        "country": "Egeo, Greece",
+        "id": 1089
+    },
+    {
+        "name": "Lecce",
+        "country": "Apúlia, Italy",
+        "id": 1090
+    },
+    {
+        "name": "Bellegra",
+        "country": "Lazio, Italy",
+        "id": 1091
+    },
+    {
+        "name": "Florence",
+        "country": "Tuscany, Italy",
+        "id": 1092
+    },
+    {
+        "name": "Nazelles-Négron",
+        "country": "Centre, France",
+        "id": 1093
+    },
+    {
+        "name": "Barcelona",
+        "country": "Catalunya, Spain",
+        "id": 1094
+    },
+    {
+        "name": "Riva",
+        "country": "Lombardy, Italy",
+        "id": 1095
+    },
+    {
+        "name": "Ermelo",
+        "country": "Gelderland, Netherlands",
+        "id": 1096
+    },
+    {
+        "name": "Anfo",
+        "country": "Lombardy, Italy",
+        "id": 1097
+    },
+    {
+        "name": "Bellecombe-en-Bauges",
+        "country": "Rhone-Alpes, France",
+        "id": 1098
+    },
+    {
+        "name": "Labenne",
+        "country": "Aquitaine, France",
+        "id": 1099
+    },
+    {
+        "name": "London",
+        "country": "United Kingdom",
+        "id": 1100
+    },
+    {
+        "name": "Hanover",
+        "country": "Lower Saxony, Germany",
+        "id": 1101
+    },
+    {
+        "name": "Frankfurt",
+        "country": "Hesse, Germany",
+        "id": 1102
+    },
+    {
+        "name": "Bamberg",
+        "country": "Bavaria, Germany",
+        "id": 1103
+    },
+    {
+        "name": "Baden-Baden",
+        "country": "Baden-Württemberg, Germany",
+        "id": 1104
+    },
+    {
+        "name": "Strasbourg",
+        "country": "Alsace, France",
+        "id": 1105
+    },
+    {
+        "name": "Tübingen",
+        "country": "Baden-Württemberg, Germany",
+        "id": 1106
+    },
+    {
+        "name": "Pyrmont",
+        "country": "NSW, Australia",
+        "id": 1107
+    },
+    {
+        "name": "Mount Nathan",
+        "country": "QLD, Australia",
+        "id": 1108
+    },
+    {
+        "name": "Melbourne",
+        "country": "VIC, Australia",
+        "id": 1109
+    },
+    {
+        "name": "Surry Hills",
+        "country": "NSW, Australia",
+        "id": 1110
+    },
+    {
+        "name": "Darlinghurst",
+        "country": "NSW, Australia",
+        "id": 1111
+    },
+    {
+        "name": "Auckland",
+        "country": "Auckland, New Zealand",
+        "id": 1112
+    },
+    {
+        "name": "Upper Hutt",
+        "country": "Wellington, New Zealand",
+        "id": 1113
+    },
+    {
+        "name": "Motueka Valley",
+        "country": "Tasman, New Zealand",
+        "id": 1114
+    },
+    {
+        "name": "Pokeno",
+        "country": "Auckland, New Zealand",
+        "id": 1115
+    },
+    {
+        "name": "Queenstown",
+        "country": "Otago, New Zealand",
+        "id": 1116
+    },
+    {
+        "name": "Coromandel",
+        "country": "Waikato, New Zealand",
+        "id": 1117
+    },
+    {
+        "name": "Koto-ku",
+        "country": "Tokyo, Japan",
+        "id": 1118
+    },
+    {
+        "name": "Fujieda",
+        "country": "Shizuoka Prefecture, Japan",
+        "id": 1119
+    },
+    {
+        "name": "Sakuho",
+        "country": "Minamisaku District, Nagano Prefecture, Japan",
+        "id": 1120
+    },
+    {
+        "name": "Kyoto",
+        "country": "Kyoto Prefecture, Japan",
+        "id": 1121
+    },
+    {
+        "name": "Toshima-ku",
+        "country": "Tokyo, Japan",
+        "id": 1122
+    },
+    {
+        "name": "Katsushika",
+        "country": "Tokyo, Japan",
+        "id": 1123
+    },
+    {
+        "name": "Setagaya-ku",
+        "country": "Tōkyō-to, Japan",
+        "id": 1124
+    },
+    {
+        "name": "京都",
+        "country": "京都, Japan",
+        "id": 1125
+    },
+    {
+        "name": "Dali",
+        "country": "Yunnan, China",
+        "id": 1126
+    },
+    {
+        "name": "Shanghai",
+        "country": "Shanghai Shi, China",
+        "id": 1127
+    },
+    {
+        "name": "Kyōto-shi",
+        "country": "Kyōto-fu, Japan",
+        "id": 1128
+    },
+    {
+        "name": "Kyōto",
+        "country": "Kyōto, Japan",
+        "id": 1129
+    },
+    {
+        "name": "Osaka-shi",
+        "country": "Osaka, Japan",
+        "id": 1130
+    },
+    {
+        "name": "大阪市",
+        "country": "大阪府, Japan",
+        "id": 1131
+    },
+    {
+        "name": "Ōsaka-shi",
+        "country": "Ōsaka-fu, Japan",
+        "id": 1132
+    },
+    {
+        "name": "Phuket",
+        "country": "Thailand, Rawai, Phuket, Thailand",
+        "id": 1133
+    },
+    {
+        "name": "Bangkok",
+        "country": "Krung Thep Maha Nakhon, Thailand",
+        "id": 1134
+    },
+    {
+        "name": "Klongsan",
+        "country": "Bangkok, Thailand",
+        "id": 1135
+    },
+    {
+        "name": "Na Chom Thian",
+        "country": "Chon Buri, Thailand",
+        "id": 1136
+    },
+    {
+        "name": "Cumbria",
+        "country": "United Kingdom",
+        "id": 1137
+    }
+]
